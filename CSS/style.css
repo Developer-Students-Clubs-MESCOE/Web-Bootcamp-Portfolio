@@ -3,79 +3,80 @@ body{
     padding:0;
 }
 
-/*Navbar section*/
 
-nav{
+/*Navbar Section*/
+
+#navbar{
     display:flex;
+    justify-content:space-between;
     align-items:center;
-    justify-content: space-between;
-    position:fixed;
-    top:0%;
     height:70px;
     width:100%;
-    background-image:linear-gradient(to right,#000,rgb(85, 82, 82));
+    position: fixed;
+    top:0;
+    background-image:linear-gradient(to right,#000,rgb(85, 80, 80));
 }
 
 .nav-first{
     color:#fff;
-    font-size:24px;
-    margin-left: 30px;
+    font-size: 28px;
+    margin-left:30px;
 }
 
 .menu{
     display:flex;
-    list-style: none;
+    list-style:none;
     margin-right: 30px;
 }
 
 .menu li a{
-    color:#fff;
     font-size:20px;
-    padding:0px 10px 0px 10px;
-    text-decoration: none;
+    color:#fff;
+    text-decoration:none;
+    padding:0 10px 0 10px;
 }
 
-/*Home Section*/
 
+/*Home Section*/
 #home{
     height:100vh;
-    width:100%;
-    background-color: #000;
     display:flex;
-    justify-content:space-around;
     margin-top:70px;
+    justify-content:space-around;
+    background-color: #000;
 }
 
 .home-1{
     color:#fff;
-    margin:150px 0px 0px 50px;
     font-size:28px;
-    font-weight: 600;
+    margin:150px 0 0 30px;
+    font-weight:600;
 }
 
 .icons{
     display:flex;
     justify-content: center;
-    
+    padding:10px;
+    margin-top:20px;
 }
-
 .icons i{
-    padding:10px 10px 0px 10px;
+    padding:0 10px 0 10px;
+    font-size: 32px;
 }
 
 .cv-btn{
-    width:300px;
+    width:250px;
     height:40px;
-    margin-top:30px;
     background-color:#ff4500;
-    border-radius: 10px;
     color:#fff;
     border:none;
-    font-size: 16px;
+    border-radius:10px;
+    font-size:18px;
+    margin:20px 0 0 40px;
 }
 
 .home-2{
-    margin:80px 80px 0px 0px;
+    margin:60px 40px 0 0;
 }
 
 .home-2 img{
@@ -83,8 +84,8 @@ nav{
     height:400px;
 }
 
-/*Contact Me*/
 
+/*Contact Me*/
 #contact{
     height:60vh;
     margin-top:20px;
@@ -93,50 +94,53 @@ nav{
 #contact span{
     display:flex;
     justify-content:center;
-    font-size:28px;
-    font-weight: 400;
+    font-size:32px;
+    font-weight: 500;
 }
 
 .input-fields{
-    margin-top:20px;
     display:flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items:center;
+    margin-top:20px;
 }
 
 .input-fields input{
-    width:300px;
+    width:250px;
     height:40px;
     margin-top:20px;
-    padding-left: 10px;
-    border-radius:10px;
+    border-radius: 10px;
+    border: 1px solid rgb(133, 130, 130);
+    padding-left:10px;
 }
 
+
 /*Media Query for Mobile View*/
+
 
 @media screen and (max-width:480px)
 {
     #home{
         display:flex;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
     }
 
     .home-1{
-        margin:80px 0px 0px 0px;
+        margin-top:50px;
+        font-size: 24px;
+    }
+    .cv-btn{
+        width:200px;
     }
     .home-2{
-        margin:40px 0px 0px 0px;
+        margin:0 0 0 0;
     }
     .home-2 img{
         width:300px;
         height:300px;
     }
-
-    nav{
+    #navbar{
         display:flex;
         flex-wrap: wrap;
-    }
-    .menu{
-        padding-left: 10px;
     }
 }
