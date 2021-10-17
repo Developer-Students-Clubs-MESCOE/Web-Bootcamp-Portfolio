@@ -8,7 +8,7 @@ body{
 
 #navbar{
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
     height:70px;
     width:100%;
@@ -41,12 +41,17 @@ body{
 #home{
     height:100vh;
     display:flex;
-    margin-top:70px;
-    justify-content:space-around;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
     background-color: #000;
 }
 
 .home-1{
+    display: flex;
+    align-items: unset;
+    justify-content: center;
+    flex-direction: column;
     color:#fff;
     font-size:28px;
     margin:150px 0 0 30px;
@@ -112,35 +117,4 @@ body{
     border-radius: 10px;
     border: 1px solid rgb(133, 130, 130);
     padding-left:10px;
-}
-
-
-/*Media Query for Mobile View*/
-
-
-@media screen and (max-width:480px)
-{
-    #home{
-        display:flex;
-        flex-wrap: wrap;
-    }
-
-    .home-1{
-        margin-top:50px;
-        font-size: 24px;
-    }
-    .cv-btn{
-        width:200px;
-    }
-    .home-2{
-        margin:0 0 0 0;
-    }
-    .home-2 img{
-        width:300px;
-        height:300px;
-    }
-    #navbar{
-        display:flex;
-        flex-wrap: wrap;
-    }
 }
